@@ -1,13 +1,12 @@
 {
   "name": "tec_request",
-  "version": "0.1.1",
-  "description": "",
+  "version": "0.1.2",
+  "description": "As an alternative to the request module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["request","tec","get","json","url"],
   "author": {
     "name": "TeKO",
     "url": "https://www.npmjs.com/~teko"
