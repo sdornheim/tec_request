@@ -12,7 +12,7 @@
     "name": "TeKO",
     "url": "https://www.npmjs.com/~teko"
   },
-  "repository": "github:https://github.com/sdornheim/tec_request",
+  "repository": "https://github.com/sdornheim/tec_request",
   "license": "ISC",
   "dependencies": {
     "https": "^1.0.0"
