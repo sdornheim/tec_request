@@ -8,7 +8,8 @@ npm i --save tec_request
 const tecrequest = require("tec_request");
 
 app.get("/", async (req, res)=>{
-    const url = "https://tools.learningcontainer.com/sample-json.json";
+    const url = "tools.learningcontainer.com/sample-json.json"; // When you set the schema option
+    const url = "https://tools.learningcontainer.com/sample-json.json"; // When doesn't set the schema option
 
     const options = {
         json: true
@@ -26,6 +27,7 @@ get(url, options)
 ### Options
 ```
 json --- true or false
+schema --- http or https
 ```
 ### Response
 ```
