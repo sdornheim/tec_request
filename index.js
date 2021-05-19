@@ -2,9 +2,12 @@ const https = require("https");
 
 const get = async function(url, options){
     return new Promise(function(resolve, reject){
+        options ?? (options = {
+            JSON: false
+        });
+
         const request = https.request(new URL(url), response=>{
-            let data = '';
-    
+            let data = '';    
             response.setEncoding('utf8');
 
             response.on('data', async (chunk) => {
@@ -12,7 +15,9 @@ const get = async function(url, options){
             });
 
             response.on('end', () => {
-                const body = JSON.parse(data);
+                let body;
+                (options.JSON) ? body = JSON.parse(data) : body = data; 
+
                 resolve({
                     data: body,
                     status: response.statusCode,
