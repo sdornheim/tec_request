@@ -4,7 +4,7 @@
 npm i --save tec_request
 
 ## Usage / Example
-
+```
 const tecrequest = require("tec_request");
 
 app.get("/", async (req, res)=>{
@@ -18,6 +18,7 @@ app.get("/", async (req, res)=>{
     
     console.log(response.data);
 });
+```
 
 ### Methods
 
