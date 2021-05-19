@@ -4,8 +4,7 @@ const https = require("https");
 const get = async function(url, options){
     return new Promise(function(resolve, reject){
         options ?? (options = {
-            json: false,
-            schema: 'https'
+            json: false
         });
 
         try{

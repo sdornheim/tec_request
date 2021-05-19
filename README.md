@@ -8,11 +8,16 @@ npm i --save tec_request
 const tecrequest = require("tec_request");
 
 app.get("/", async (req, res)=>{
-    const url = "tools.learningcontainer.com/sample-json.json"; // When you set the schema option
-    const url = "https://tools.learningcontainer.com/sample-json.json"; // When doesn't set the schema option
+
+    // When you set the schema option
+    const url = "tools.learningcontainer.com/sample-json.json"; 
+
+    // When doesn't set the schema option THIS IS THE DEFAULT
+    const url = "https://tools.learningcontainer.com/sample-json.json";
 
     const options = {
-        json: true
+        json: true,
+        schema: 'https' // This setting is ignored if the scheme is included in the URL
     };
 
     let response = await tecrequest.get(url, options);
