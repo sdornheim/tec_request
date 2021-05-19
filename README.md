@@ -27,5 +27,12 @@ get(url, options)
 ```
 JSON --- true or false
 ```
+### Response
+```
+response
+|_ data
+|_ status
+|_ headers
+```
 ### Update History
 2021/05/19 - add get method with option JSON
