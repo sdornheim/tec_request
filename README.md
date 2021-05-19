@@ -11,7 +11,7 @@ app.get("/", async (req, res)=>{
     const url = "https://tools.learningcontainer.com/sample-json.json";
 
     const options = {
-        JSON: true
+        json: true
     };
 
     let response = await tecrequest.get(url, options);
@@ -25,7 +25,7 @@ get(url, options)
 ```
 ### Options
 ```
-JSON --- true or false
+json --- true or false
 ```
 ### Response
 ```
