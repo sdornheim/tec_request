@@ -8,7 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "TeKO",
+  "author": {
+    "name": "TeKO",
+    "url": "https://www.npmjs.com/~teko"
+  },
+  "repository": "github:https://github.com/sdornheim/tec_request",
   "license": "ISC",
   "dependencies": {
     "https": "^1.0.0"
